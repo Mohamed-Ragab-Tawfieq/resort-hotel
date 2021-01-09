@@ -1,0 +1,472 @@
+@white: #fff;
+@orange: #ffa37b;
+@lightgray: #6d6d6d;
+@darkgray: #312e2e;
+.row {
+  margin: 0;
+}
+body {
+  font-family: "Droid Arabic Kufi";
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: @darkgray;
+}
+p,
+span {
+  color: @lightgray;
+}
+@media screen and (max-width: 768px) {
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-size: 1.1em;
+  }
+  p,
+  span {
+    font-size: 0.8em;
+  }
+}
+//----navbar----
+.row {
+  .navbar {
+    background: transparent;
+    height: 13vh;
+    position: fixed;
+    width: 100vw;
+    z-index: 99999;
+
+    transition-property: height;
+    -moz-transition-property: height; /* Firefox 4 */
+    -webkit-transition-property: height; /* Safari and Chrome */
+    -o-transition-property: height; /* Opera */
+
+    transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s; /* Firefox 4 */
+    -webkit-transition-duration: 0.3s; /* Safari and Chrome */
+    -o-transition-duration: 0.3s; /* Opera */
+
+    transition-timing-function: linear;
+    -moz-transition-timing-function: linear; /* Firefox 4 */
+    -webkit-transition-timing-function: linear; /* Safari and Chrome */
+    -o-transition-timing-function: linear; /* Opera */
+    i {
+      font-size: 1.2em;
+    }
+    .toggler-overlay {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100vh;
+      background: rgba(250, 245, 245, 0.9);
+      z-index: 9999;
+      ul {
+        position: absolute;
+        top: 5%;
+        right: 2%;
+        float: right !important;
+        li {
+          .close {
+            color: #000 !important;
+            border: none;
+            background: none;
+            font-size: 2em;
+            margin-bottom: 3vh;
+            &:hover {
+              color: @orange !important;
+            }
+          }
+          a {
+            font-size: 1.5em;
+            line-height: 2em;
+            font-weight: bolder;
+            color: @darkgray !important;
+            &:hover {
+              color: @orange !important;
+              text-decoration: none;
+            }
+          }
+        }
+        p {
+          color: @lightgray;
+          &:last-child {
+            line-height: 0.5em;
+          }
+          span {
+            font-size: 1em;
+          }
+        }
+        .book-line {
+          margin-top: 30vh;
+          border-bottom: 1px solid @lightgray;
+        }
+      }
+    }
+    .navbar-brand {
+      border: 3px solid @white;
+      color: @white !important;
+      float: right !important;
+      &:hover {
+        color: @white !important;
+      }
+    }
+  }
+  ul {
+    float: right !important;
+  }
+  li {
+    #homeLink {
+      color: @orange !important;
+    }
+    a {
+      color: @white !important;
+      &:hover {
+        color: @orange !important;
+      }
+    }
+    button {
+      color: @white !important;
+      background: @orange;
+      border: none;
+      transition: 0.3s ease;
+    }
+
+    .book-btn {
+      &:hover {
+        background: rgba(49, 46, 46, 0.4);
+        color: @orange !important;
+      }
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .navbar {
+      direction: ltr;
+    }
+    .book-btn {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+//----home----
+.home {
+  height: 100vh;
+  background-image: url(/images/home/1274362_17040513080052133895.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  h1 {
+    color: @white;
+    font-size: 4em;
+  }
+  @media screen and (max-width: 992px) {
+    h1 {
+      font-size: 2em;
+    }
+  }
+  input {
+    border-radius: 0;
+    border: 2px solid @white;
+    background: rgba(46, 4, 85, 0.7);
+    height: 50px;
+    z-index: 9999;
+    &::placeholder {
+      color: @white;
+    }
+    &:focus {
+      background: rgba(46, 4, 85, 0.7);
+      box-shadow: none;
+      color: @white;
+    }
+  }
+  button {
+    border-radius: 0;
+    color: @white;
+    height: 50px;
+    border: none;
+    z-index: 9999;
+    transition: 0.3s ease;
+  }
+  .book-btn {
+    background: @orange;
+    color: @white;
+    &:hover {
+      background: rgba(46, 4, 85, 0.7);
+    }
+  }
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(46, 4, 85, 0.7);
+}
+
+//----offers----
+.offers {
+  h2 {
+    color: @darkgray;
+  }
+  p {
+    color: @lightgray;
+  }
+}
+
+//----rooms images----
+.rooms-images {
+  height: 55vh;
+  .col-lg-3 {
+    &:first-child {
+      background-image: url("/images/room_images/room1.webp");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    &:nth-child(2) {
+      background-image: url("/images/room_images/room2.webp");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    &:nth-child(3) {
+      background-image: url("/images/room_images/room3.webp");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    &:last-child {
+      background-image: url("/images/room_images/room4.webp");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+//----experience----
+.experience {
+  .container {
+    div {
+      &:first-child {
+        float: right;
+      }
+      &:last-child {
+        float: left;
+      }
+    }
+  }
+}
+
+//----reviews----
+.reviews {
+  color: rgb(41, 10, 77);
+  background-image: url(/images/home/hotel-bedroom-gallery.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(46, 4, 85, 0.7);
+  }
+  .card {
+    span {
+      i {
+        color: #eebd01;
+      }
+    }
+  }
+}
+
+//----prices carousel----
+.prices-carousel {
+  .carousel-item {
+    img {
+      height: 500px;
+    }
+    p {
+      position: absolute;
+      background: @white;
+      color: @darkgray;
+    }
+  }
+  .carousel-caption {
+    button {
+      color: @white !important;
+      background: @orange;
+      border: none;
+    }
+  }
+}
+
+//----footer----
+.footer {
+  border-top: 2px solid @lightgray;
+  h2 {
+    color: @darkgray;
+    border: 3px solid @darkgray;
+  }
+  h4 {
+    color: @darkgray;
+  }
+  p {
+    color: @lightgray;
+    line-height: 0.7em;
+  }
+  input {
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid @darkgray;
+    line-height: 2.3em;
+  }
+  button {
+    background: @orange;
+    color: @white;
+    border: none;
+  }
+}
+
+//--------------------------------------------------------------------------------------------------------
+//-------------------------about.html---------------------------------------------------------------------
+
+//----income----
+.about-home {
+  background-image: url(/images/about-page/home.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.income {
+  .col-md-6 {
+    &:first-child {
+      background-image: url(/images/about-page/jorg-angeli-1tyuLfDOnG0-unsplash.webp);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  .timer2 {
+    &::after {
+      content: "ألف";
+      padding: 2px;
+    }
+  }
+  .timer4 {
+    &::after {
+      content: "%";
+      padding: 2px;
+    }
+  }
+  .timer5 {
+    &::after {
+      content: "%";
+      padding: 2px;
+    }
+  }
+  .timer6 {
+    &::after {
+      content: "%";
+      padding: 2px;
+    }
+  }
+}
+
+//----wedding----
+.wedding {
+  .col-md-6 {
+    &:last-child {
+      background-image: url(/images/about-page/rktkn-ssOtyGE8CyE-unsplash.webp);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+//-------------------------------------------------------------------------------------------------
+//-------------------------contact.html------------------------------------------------------------
+.contact {
+  h2 {
+    line-height: 3em;
+  }
+  input {
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid @darkgray;
+    &:focus {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+  textarea {
+    border: none;
+    border-bottom: 2px solid @darkgray;
+    &:focus {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+  button {
+    background: @orange;
+    color: @white;
+    border: none;
+    &:hover {
+      box-shadow: 0 0 10px 5px #ccc;
+    }
+  }
+}
+
+//----------------------------------------------------------------------------------------------------
+//-------------------------blog.html------------------------------------------------------------------
+.blog-home {
+  background-image: url(/images/blog-page/home.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.blog-body {
+  h4 {
+    color: @darkgray;
+  }
+  p,
+  span {
+    color: @lightgray;
+  }
+  span {
+    font-size: 0.6em;
+    margin: 1px;
+  }
+  input {
+    line-height: 2em;
+    border: none;
+    border-bottom: 2px solid @lightgray;
+  }
+  button {
+    padding: 10px 20px;
+    background: @orange;
+    color: @white;
+    border: none;
+  }
+  .ads {
+    background-image: url(/images/blog-page/khadeeja-yasser-msFZE7d9KB4-unsplash.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    p,
+    h3 {
+      color: @white;
+      line-height: 0.8em;
+    }
+  }
+}

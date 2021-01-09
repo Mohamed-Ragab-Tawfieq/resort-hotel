@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>المدونة</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- home -->
+    <div class="row home text-center">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand py-2 px-4 mr-5 ml-2" href="index.html"
+            >المنتجع</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#togglerOverlay"
+            aria-controls="toggler-overlay"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-5" dir="rtl">
+              <li class="nav-item active">
+                <a class="nav-link ml-3" href="index.html" id="homeLink"
+                  >الرئيسية <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#">الغرف</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="about.html">من نحن</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="blog.html">المدونة</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="contact.html">
+                  اتصل بنا
+                </a>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link book-btn py-2 px-3 mx-2">
+                  احجز أون لاين
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link py-2 px-3 mx-2">
+                  2<i>5</i>617<i>8</i>514
+                  <span><img src="/images/home/phone.png" alt="phone"/></span>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="toggler-overlay" id="togglerOverlay">
+            <ul class="list-unstyled my-auto">
+              <li>
+                <button
+                  type="button"
+                  class="close col-12 text-right"
+                  data-dismiss="toggler-overlay"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </li>
+              <li>
+                <a href="index.html">الرئيسية</a>
+              </li>
+              <li>
+                <a href="#">الغرف</a>
+              </li>
+              <li>
+                <a href="blog.html">المدونة</a>
+              </li>
+              <li>
+                <a href="about.html">من نحن</a>
+              </li>
+              <li class="mb-5">
+                <a href="contact.html">اتصل بنا</a>
+              </li>
+              <p class="book-line">
+                <span
+                  ><img src="/images/home/phone-dark.png" alt="phone"
+                /></span>
+                احجز أون لاين
+              </p>
+              <p>
+                <span class="fa fa-phone float-left mx-2"></span>
+                21485620155
+              </p>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="container text-center my-auto pt-5" style="z-index: 9999">
+        <div class="row text-center">
+          <div class="col-12">
+            <h1 class="p-4">المدونة</h1>
+            <form role="form" class="form">
+              <div class="row">
+                <div class="form-group col-12 col-md-3">
+                  <input
+                    required=""
+                    type="text"
+                    class="form-control"
+                    placeholder="الوصول"
+                    onfocus="(this.type='date')"
+                    title="موعد الوصول"
+                  />
+                </div>
+                <div class="form-group col-12 col-md-3">
+                  <input
+                    required=""
+                    type="text"
+                    class="form-control"
+                    placeholder="المغادرة"
+                    onfocus="(this.type='date')"
+                    title="موعد المغادرة"
+                  />
+                </div>
+                <div class="form-group  col-12 col-md-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="الأطفال"
+                    title="عدد الأطفال"
+                  />
+                </div>
+                <div class="form-group  col-12 col-md-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="الحجرة"
+                  />
+                </div>
+                <div class="form-group  col-12 col-lg-2">
+                  <button type="submit" class="btn book-btn py-2 px-4">
+                    احجز الآن
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay"></div>
+    <!-- end of home -->
+
+    <!-- blog-body -->
+    <div class="row blog-body text-center ">
+      <!-- right part -->
+      <div class="col-12 col-md-9">
+        <div class="row py-5 text-right">
+          <img
+            src="/images/blog-page/khadeeja-yasser-msFZE7d9KB4-unsplash (2).webp"
+            alt="room1"
+            class="w-100 py-4"
+          />
+          <h4 class="col-12">كيف تحجز في فندق اون لاين</h4>
+          <span><img src="/images/blog-page/folder.png" alt="" /> اخبار</span>
+
+          <span><img src="/images/blog-page/like.png" alt="" /> 55 اعجاب</span>
+          <span><img src="/images/blog-page/eye.png" alt="" /> 602 مشاهدة</span>
+          <span
+            ><img src="/images/blog-page/comment.png" alt="" /> 5 تعليقات</span
+          >
+          <p class="my-3">
+            غرف مكيفة مع واي فاي مجاني وبلكونات مطلة على البحر بما يعطي منظرا
+            رائعا ، كما أن الغرف لها ديكور مصمم على أعلى مستوى
+          </p>
+          <p>
+            ملاعب تنس وحمامات سباحة وبوفيه مفتوح وذلك بأرخص الأسعار بالإضافة
+            لخدمة عالية الجودة من طاقم على أعلى مستوى
+          </p>
+          <button>اقرأ أكثر</button>
+        </div>
+        <div class="row py-5 text-right">
+          <img
+            src="/images/blog-page/man-pan-KTSYy-3XVSo-unsplash.webp"
+            alt="room3"
+            class="w-100 py-4"
+          />
+          <h4 class="col-12">وفر فلوسك مع ارخص فندق</h4>
+          <span><img src="/images/blog-page/folder.png" alt="" /> اخبار</span>
+
+          <span><img src="/images/blog-page/like.png" alt="" /> 55 اعجاب</span>
+          <span><img src="/images/blog-page/eye.png" alt="" /> 602 مشاهدة</span>
+          <span
+            ><img src="/images/blog-page/comment.png" alt="" /> 5 تعليقات</span
+          >
+          <p class="my-3">
+            غرف مكيفة مع واي فاي مجاني وبلكونات مطلة على البحر بما يعطي منظرا
+            رائعا ، كما أن الغرف لها ديكور مصمم على أعلى مستوى
+          </p>
+          <p>
+            ملاعب تنس وحمامات سباحة وبوفيه مفتوح وذلك بأرخص الأسعار بالإضافة
+            لخدمة عالية الجودة من طاقم على أعلى مستوى
+          </p>
+          <button>اقرأ أكثر</button>
+        </div>
+        <div class="row py-5 text-right">
+          <img
+            src="/images/blog-page/emile-guillemot-Bj_rcSC5XfE-unsplash.webp"
+            alt="room 2"
+            class="w-100 py-4"
+          />
+          <h4 class="col-12">أكثر الفنادق جمالا في مصر</h4>
+          <span><img src="/images/blog-page/folder.png" alt="" /> اخبار</span>
+
+          <span><img src="/images/blog-page/like.png" alt="" /> 55 اعجاب</span>
+          <span><img src="/images/blog-page/eye.png" alt="" /> 602 مشاهدة</span>
+          <span
+            ><img src="/images/blog-page/comment.png" alt="" /> 5 تعليقات</span
+          >
+          <p class="my-3">
+            غرف مكيفة مع واي فاي مجاني وبلكونات مطلة على البحر بما يعطي منظرا
+            رائعا ، كما أن الغرف لها ديكور مصمم على أعلى مستوى
+          </p>
+          <p>
+            ملاعب تنس وحمامات سباحة وبوفيه مفتوح وذلك بأرخص الأسعار بالإضافة
+            لخدمة عالية الجودة من طاقم على أعلى مستوى
+          </p>
+          <button>اقرأ أكثر</button>
+        </div>
+        <div class="row"></div>
+      </div>
+      <!-- left part -->
+      <div class="col-12 col-md-3 text-right">
+        <input
+          class="my-5 py-2 col-12"
+          type="text"
+          placeholder="اكتب كلمة للبحث"
+        />
+        <button class="input-btn py-2 px-4">بحث</button>
+        <h4 class="py-4">أحدث المنشورات</h4>
+        <p>منتج مميز</p>
+        <p>منشور أساسي</p>
+        <p>منشور فيديو</p>
+        <p>منشور صورة</p>
+        <h4 class="py-4">المحتويات</h4>
+        <p>الأخبار</p>
+        <p>الفندق</p>
+        <p>الأجازة</p>
+        <h4 class="py-4">كلمات مفتاحية</h4>
+        <span>أخبار</span>
+        <span class="m-2">فندق</span>
+        <span class="m-2">أجازة</span>
+        <span class="m-2">سباحة</span>
+        <span class="m-2">منتجع</span>
+        <span class="m-2">آراء</span>
+        <span class="m-2">أسعار</span>
+        <span class="m-2">الصيف</span>
+        <span class="m-2">الشاطئ</span>
+        <div class="row text-center mt-5">
+          <div class="ads" style="height:290px;width:260px">
+            <h3 class="mt-5">عرض خاص</h3>
+            <p>غرفة عائلية</p>
+            <button class="mt-5">احجز الآن</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of blog-body -->
+
+    <!-- footer -->
+    <div class="row footer text-center pt-3">
+      <div class="col-12">
+        <div class="row">
+          <div class="row col-12">
+            <div class="col-lg-2 text-right">
+              <h4 class="py-2">العنوان</h4>
+              <p>مصر</p>
+              <p>الإسكندرية</p>
+              <p>شاطئ 7</p>
+            </div>
+            <div class="col-lg-4 text-right">
+              <h4 class="py-2">الحجز</h4>
+              <p>هاتف: 698573235</p>
+              <p>فاكس: 51291475325</p>
+              <p>reservations@hotelresort.com</p>
+            </div>
+            <div class="col-12 col-lg-3 text-right">
+              <h4 class="py-2">متابعة</h4>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="اكتب ايميلك"
+              />
+              <div class="row">
+                <button class="py-2 px-5 my-3">اشترك</button>
+              </div>
+            </div>
+            <div class="row col-6 col-lg-3 pt-5">
+              <div class="col-6">
+                <img
+                  src="/images/experience/about_1.webp"
+                  alt="experience 1"
+                  class="w-100"
+                />
+              </div>
+              <div class="col-6">
+                <img
+                  src="/images/experience/LEED_Certified.5c586582b55011 (1).webp"
+                  alt="experience 2"
+                  class="w-100"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 pt-5">
+            <p class="copyright">محمد رجب @ 2019</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of footer -->
+
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

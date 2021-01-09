@@ -1,0 +1,397 @@
+.row {
+  margin: 0;
+}
+body {
+  font-family: "Droid Arabic Kufi";
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #312e2e;
+}
+p,
+span {
+  color: #6d6d6d;
+}
+@media screen and (max-width: 768px) {
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-size: 1.1em;
+  }
+  p,
+  span {
+    font-size: 0.8em;
+  }
+}
+.row .navbar {
+  background: transparent;
+  height: 13vh;
+  position: fixed;
+  width: 100vw;
+  z-index: 99999;
+  transition-property: height;
+  -moz-transition-property: height;
+  /* Firefox 4 */
+  -webkit-transition-property: height;
+  /* Safari and Chrome */
+  -o-transition-property: height;
+  /* Opera */
+  transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  /* Firefox 4 */
+  -webkit-transition-duration: 0.3s;
+  /* Safari and Chrome */
+  -o-transition-duration: 0.3s;
+  /* Opera */
+  transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  /* Firefox 4 */
+  -webkit-transition-timing-function: linear;
+  /* Safari and Chrome */
+  -o-transition-timing-function: linear;
+  /* Opera */
+}
+.row .navbar i {
+  font-size: 1.2em;
+}
+.row .navbar .toggler-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background: rgba(250, 245, 245, 0.9);
+  z-index: 9999;
+}
+.row .navbar .toggler-overlay ul {
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  float: right !important;
+}
+.row .navbar .toggler-overlay ul li .close {
+  color: #000 !important;
+  border: none;
+  background: none;
+  font-size: 2em;
+  margin-bottom: 3vh;
+}
+.row .navbar .toggler-overlay ul li .close:hover {
+  color: #ffa37b !important;
+}
+.row .navbar .toggler-overlay ul li a {
+  font-size: 1.5em;
+  line-height: 2em;
+  font-weight: bolder;
+  color: #312e2e !important;
+}
+.row .navbar .toggler-overlay ul li a:hover {
+  color: #ffa37b !important;
+  text-decoration: none;
+}
+.row .navbar .toggler-overlay ul p {
+  color: #6d6d6d;
+}
+.row .navbar .toggler-overlay ul p:last-child {
+  line-height: 0.5em;
+}
+.row .navbar .toggler-overlay ul p span {
+  font-size: 1em;
+}
+.row .navbar .toggler-overlay ul .book-line {
+  margin-top: 30vh;
+  border-bottom: 1px solid #6d6d6d;
+}
+.row .navbar .navbar-brand {
+  border: 3px solid #fff;
+  color: #fff !important;
+  float: right !important;
+}
+.row .navbar .navbar-brand:hover {
+  color: #fff !important;
+}
+.row ul {
+  float: right !important;
+}
+.row li #homeLink {
+  color: #ffa37b !important;
+}
+.row li a {
+  color: #fff !important;
+}
+.row li a:hover {
+  color: #ffa37b !important;
+}
+.row li button {
+  color: #fff !important;
+  background: #ffa37b;
+  border: none;
+  transition: 0.3s ease;
+}
+.row li .book-btn:hover {
+  background: rgba(49, 46, 46, 0.4);
+  color: #ffa37b !important;
+}
+@media screen and (max-width: 992px) {
+  .row .navbar {
+    direction: ltr;
+  }
+  .row .book-btn {
+    margin-bottom: 5px;
+  }
+}
+.home {
+  height: 100vh;
+  background-image: url(/images/home/1274362_17040513080052133895.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.home h1 {
+  color: #fff;
+  font-size: 4em;
+}
+@media screen and (max-width: 992px) {
+  .home h1 {
+    font-size: 2em;
+  }
+}
+.home input {
+  border-radius: 0;
+  border: 2px solid #fff;
+  background: rgba(46, 4, 85, 0.7);
+  height: 50px;
+  z-index: 9999;
+}
+.home input::placeholder {
+  color: #fff;
+}
+.home input:focus {
+  background: rgba(46, 4, 85, 0.7);
+  box-shadow: none;
+  color: #fff;
+}
+.home button {
+  border-radius: 0;
+  color: #fff;
+  height: 50px;
+  border: none;
+  z-index: 9999;
+  transition: 0.3s ease;
+}
+.home .book-btn {
+  background: #ffa37b;
+  color: #fff;
+}
+.home .book-btn:hover {
+  background: rgba(46, 4, 85, 0.7);
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(46, 4, 85, 0.7);
+}
+.offers h2 {
+  color: #312e2e;
+}
+.offers p {
+  color: #6d6d6d;
+}
+.rooms-images {
+  height: 55vh;
+}
+.rooms-images .col-lg-3:first-child {
+  background-image: url("/images/room_images/room1.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.rooms-images .col-lg-3:nth-child(2) {
+  background-image: url("/images/room_images/room2.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.rooms-images .col-lg-3:nth-child(3) {
+  background-image: url("/images/room_images/room3.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.rooms-images .col-lg-3:last-child {
+  background-image: url("/images/room_images/room4.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.experience .container div:first-child {
+  float: right;
+}
+.experience .container div:last-child {
+  float: left;
+}
+.reviews {
+  color: #290a4d;
+  background-image: url(/images/home/hotel-bedroom-gallery.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.reviews .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(46, 4, 85, 0.7);
+}
+.reviews .card span i {
+  color: #eebd01;
+}
+.prices-carousel .carousel-item img {
+  height: 500px;
+}
+.prices-carousel .carousel-item p {
+  position: absolute;
+  background: #fff;
+  color: #312e2e;
+}
+.prices-carousel .carousel-caption button {
+  color: #fff !important;
+  background: #ffa37b;
+  border: none;
+}
+.footer {
+  border-top: 2px solid #6d6d6d;
+}
+.footer h2 {
+  color: #312e2e;
+  border: 3px solid #312e2e;
+}
+.footer h4 {
+  color: #312e2e;
+}
+.footer p {
+  color: #6d6d6d;
+  line-height: 0.7em;
+}
+.footer input {
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid #312e2e;
+  line-height: 2.3em;
+}
+.footer button {
+  background: #ffa37b;
+  color: #fff;
+  border: none;
+}
+.about-home {
+  background-image: url(/images/about-page/home.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.income .col-md-6:first-child {
+  background-image: url(/images/about-page/jorg-angeli-1tyuLfDOnG0-unsplash.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.income .timer2::after {
+  content: "ألف";
+  padding: 2px;
+}
+.income .timer4::after {
+  content: "%";
+  padding: 2px;
+}
+.income .timer5::after {
+  content: "%";
+  padding: 2px;
+}
+.income .timer6::after {
+  content: "%";
+  padding: 2px;
+}
+.wedding .col-md-6:last-child {
+  background-image: url(/images/about-page/rktkn-ssOtyGE8CyE-unsplash.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.contact h2 {
+  line-height: 3em;
+}
+.contact input {
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid #312e2e;
+}
+.contact input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.contact textarea {
+  border: none;
+  border-bottom: 2px solid #312e2e;
+}
+.contact textarea:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.contact button {
+  background: #ffa37b;
+  color: #fff;
+  border: none;
+}
+.contact button:hover {
+  box-shadow: 0 0 10px 5px #ccc;
+}
+.blog-home {
+  background-image: url(/images/blog-page/home.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.blog-body h4 {
+  color: #312e2e;
+}
+.blog-body p,
+.blog-body span {
+  color: #6d6d6d;
+}
+.blog-body span {
+  font-size: 0.6em;
+  margin: 1px;
+}
+.blog-body input {
+  line-height: 2em;
+  border: none;
+  border-bottom: 2px solid #6d6d6d;
+}
+.blog-body button {
+  padding: 10px 20px;
+  background: #ffa37b;
+  color: #fff;
+  border: none;
+}
+.blog-body .ads {
+  background-image: url(/images/blog-page/khadeeja-yasser-msFZE7d9KB4-unsplash.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.blog-body .ads p,
+.blog-body .ads h3 {
+  color: #fff;
+  line-height: 0.8em;
+}

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="فندق المنتجع به عشرات الغرف وحمامات سباحة وخدمة 7 نجوم في الاسكندرية"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>فندق المنتجع</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/css/DroidKufi-Regular.ttf" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- home -->
+    <div class="row home text-center">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand py-2 px-4 mr-5 ml-2" href="index.html"
+            >المنتجع</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#togglerOverlay"
+            aria-controls="toggler-overlay"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-5" dir="rtl">
+              <li class="nav-item active">
+                <a class="nav-link ml-3" href="index.html" id="homeLink"
+                  >الرئيسية <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="about.html">الغرف</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="about.html">من نحن</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="blog.html">المدونة</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="contact.html">
+                  اتصل بنا
+                </a>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link book-btn py-2 px-3 mx-2">
+                  احجز أون لاين
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link py-2 px-3 mx-2">
+                  2<i>5</i>617<i>8</i>514
+                  <span><img src="/images/home/phone.png" alt="phone"/></span>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="toggler-overlay" id="togglerOverlay">
+            <ul class="list-unstyled my-auto">
+              <li>
+                <button
+                  type="button"
+                  class="close col-12 text-right"
+                  data-dismiss="toggler-overlay"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </li>
+              <li>
+                <a href="index.html">الرئيسية</a>
+              </li>
+              <li>
+                <a href="about.html">الغرف</a>
+              </li>
+              <li>
+                <a href="blog.html">المدونة</a>
+              </li>
+              <li>
+                <a href="about.html">من نحن</a>
+              </li>
+              <li class="mb-5">
+                <a href="contact.html">اتصل بنا</a>
+              </li>
+              <p class="book-line">
+                <span
+                  ><img src="/images/home/phone-dark.png" alt="phone"
+                /></span>
+                احجز أون لاين
+              </p>
+              <p>
+                <span class="fa fa-phone float-left mx-2"></span>
+                21485620155
+              </p>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="container text-center my-auto pt-5" style="z-index: 9999">
+        <div class="row text-center">
+          <div class="col-12">
+            <h1 class="p-4">إقامة سعيدة</h1>
+            <form role="form" class="form">
+              <div class="row">
+                <div class="form-group col-12 col-md-3">
+                  <input
+                    required=""
+                    type="text"
+                    class="form-control"
+                    placeholder="الوصول"
+                    onfocus="(this.type='date')"
+                    title="موعد الوصول"
+                  />
+                </div>
+                <div class="form-group col-12 col-md-3">
+                  <input
+                    required=""
+                    type="text"
+                    class="form-control"
+                    placeholder="المغادرة"
+                    onfocus="(this.type='date')"
+                    title="موعد المغادرة"
+                  />
+                </div>
+                <div class="form-group  col-12 col-md-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="الأطفال"
+                    title="عدد الأطفال"
+                  />
+                </div>
+                <div class="form-group  col-12 col-md-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="الحجرة"
+                  />
+                </div>
+                <div class="form-group  col-12 col-lg-2">
+                  <button type="submit" class="btn book-btn py-2 px-4">
+                    احجز الآن
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay"></div>
+    <!-- end of home -->
+
+    <!-- offers -->
+    <div class="row offers text-center p-5">
+      <div class="row">
+        <div class="col-12 col-md-4 my-4">
+          <img
+            src="/images/offers/resort.webp"
+            class="col-offset-4 col-4 col-offset-4"
+            alt="resort"
+          />
+          <h3>منتجع رائع</h3>
+          <p>
+            ملاعب تنس وحمامات سباحة وبوفيه مفتوح وذلك بأرخص الأسعار بالإضافة
+            لخدمة عالية الجودة من طاقم على أعلى مستوى
+          </p>
+        </div>
+        <div class="col-12 col-md-4 my-4">
+          <img
+            src="/images/offers/swim.webp"
+            class="col-offset-4 col-4 col-offset-4"
+            alt="swimming pool"
+          />
+          <h3>حمامات سباحة</h3>
+          <p>
+            حمامات سباحة مفتوحة من العاشرة صباحا وحتى السادسة مساء ، مع وجبات
+            وعصائر مجانا بعد الاستمتاع بالسباحة ، كما يوجد حمامات سباحة عائلية
+            مخصصة
+          </p>
+        </div>
+        <div class="col-12 col-md-4 my-4">
+          <img
+            src="/images/offers/room.webp"
+            class="col-offset-4 col-4 col-offset-4"
+            alt="room"
+          />
+          <h3>غرف ذات رفاهية</h3>
+          <p>
+            غرف مكيفة مع واي فاي مجاني وبلكونات مطلة على البحر بما يعطي منظرا
+            رائعا ، كما أن الغرف لها ديكور مصمم على أعلى مستوى
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- end of offers -->
+
+    <!-- rooms images -->
+    <div class="row rooms-images">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3"></div>
+      <div class="d-none d-sm-block col-12 col-sm-6 col-md-4 col-lg-3"></div>
+      <div class="d-none d-md-block col-sm-6 col-md-4 col-lg-3"></div>
+      <div class="d-none d-lg-block col-sm-6 col-md-4 col-lg-3"></div>
+    </div>
+    <!-- end of room images -->
+
+    <!-- experience -->
+    <div class="row experience py-5">
+      <div class="col-12 col-md-6 text-center my-auto py-5">
+        <div class="container">
+          <h2 class="py-3">فندق المنتجع 10 سنوات من التألق</h2>
+          <p>
+            غرف مكيفة مع واي فاي مجاني وبلكونات مطلة على البحر بما يعطي منظرا
+            رائعا ، كما أن الغرف لها ديكور مصمم على أعلى مستوى
+          </p>
+          <p>
+            ملاعب تنس وحمامات سباحة وبوفيه مفتوح وذلك بأرخص الأسعار بالإضافة
+            لخدمة عالية الجودة من طاقم على أعلى مستوى
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 text-center my-auto">
+        <div class="container">
+          <img
+            src="/images/experience/GreenStarHotel.webp"
+            alt="quality certification1"
+          />
+          <img
+            src="/images/experience/LEED_Certified.5c586582b55011 (1).webp"
+            alt="quality certification2"
+          />
+          <img
+            src="/images/experience/about_1.webp"
+            alt="quality certification3"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- end of experience -->
+
+    <!-- reviews -->
+    <div class="row reviews text-center py-5">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card text-center">
+              <div class="card-header">
+                <span><img src="/images/reviews/star.png" alt="star"></span>
+                <span><img src="/images/reviews/star.png" alt="star"></span>
+                <span><img src="/images/reviews/star.png" alt="star"></span>
+                <span><img src="/images/reviews/star.png" alt="star"></span>
+                <span><img src="/images/reviews/star.png" alt="star"></span>
+                <h3>مكان رائع</h3>
+                <p>
+                  هذا الفندق من أجمل الفنادق التي نزلت بها فهو يحتوي على خدمة
+                  رائعة ومكان مريح وميزات عالية وجودة راقية وانصح كل شخص يريد
+                  فندقا ان يأتي الى هذا الفندق
+                </p>
+                <img
+                  src="/images/reviews/man1.webp"
+                  class="rounded-circle"
+                  alt="review 1"
+                />
+                <p>محمود الجارحي</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-none d-md-block col-12 col-md-6 col-lg-4 my-auto">
+            <div class="card text-center">
+              <div class="card-header">
+                <span><img src="/images/reviews/star.png" alt="star"></span>
+                <span><img src="/images/reviews/star.png" alt="star"></span>
+                <span><img src="/images/reviews/star.png" alt="star"></span>
+                <span><img src="/images/reviews/star.png" alt="star"></span>
+                <span><img src="/images/reviews/star.png" alt="star"></span>
+                <h3>فندق مميز جدا</h3>
+                <p>
+                  هذا الفندق من أجمل الفنادق التي نزلت بها فهو يحتوي على خدمة
+                  رائعة ومكان مريح وميزات عالية وجودة راقية وانصح كل شخص يريد
+                  فندقا ان يأتي الى هذا الفندق
+                </p>
+                <img
+                  src="/images/reviews/man2.webp"
+                  class="rounded-circle"
+                  alt="review 1"
+                />
+                <p>محمد صلاح</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-none d-lg-block col-12 col-md-6 col-lg-4 my-auto">
+            <div class="card text-center">
+              <div class="card-header">
+                <span><img src="/images/reviews/star.png" alt="star"></span>
+                <span><img src="/images/reviews/star.png" alt="star"></span>
+                <span><img src="/images/reviews/star.png" alt="star"></span>
+                <span><img src="/images/reviews/star.png" alt="star"></span>
+                <span><img src="/images/reviews/star.png" alt="star"></span>
+                <h3>غاية في الروعة</h3>
+                <p>
+                  هذا الفندق من أجمل الفنادق التي نزلت بها فهو يحتوي على خدمة
+                  رائعة ومكان مريح وميزات عالية وجودة راقية وانصح كل شخص يريد
+                  فندقا ان يأتي الى هذا الفندق
+                </p>
+                <img
+                  src="/images/reviews/man3.webp"
+                  class="rounded-circle"
+                  alt="review 1"
+                />
+                <p>أحمد مصطفى</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of reviews -->
+
+    <!-- prices carousel -->
+    <div class="row prices-carousel py-5 my-au">
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide col-12 col-md-6 col-lg-4"
+        data-ride="carousel"
+        data-interval="2000"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p class="p-2 m-2">120 جنيه / اليوم</p>
+            <img
+              class="d-block w-100"
+              src="/images/prices-carousel/carousel1.webp"
+              alt="First slide"
+            />
+            <div class="carousel-caption">
+              <button class="py-2 px-4">غرفة عائلية</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <p class="p-2 m-2">150 جنيه / اليوم</p>
+            <img
+              class="d-block w-100"
+              src="/images/prices-carousel/carousel2.webp"
+              alt="Second slide"
+            />
+            <div class="carousel-caption">
+              <button class="py-2 px-4">غرفة متوسطة</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <p class="p-2 m-2">180 جنيه / اليوم</p>
+            <img
+              class="d-block w-100"
+              src="/images/prices-carousel/carousel3.webp"
+              alt="Third slide"
+            />
+            <div class="carousel-caption">
+              <button class="py-2 px-4">غرفة فردية</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide d-none d-md-block col-md-6 col-lg-4"
+        data-ride="carousel"
+        data-interval="2000"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p class="p-2 m-2">120 جنيه / اليوم</p>
+            <img
+              class="d-block w-100"
+              src="/images/prices-carousel/carousel4.webp"
+              alt="First slide"
+            />
+            <div class="carousel-caption">
+              <button class="py-2 px-4">غرفة فردية</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <p class="p-2 m-2">180 جنيه / اليوم</p>
+            <img
+              class="d-block w-100"
+              src="/images/prices-carousel/carousel5.webp"
+              alt="Second slide"
+            />
+            <div class="carousel-caption">
+              <button class="py-2 px-4">غرفة فردية</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <p class="p-2 m-2">160 جنيه / اليوم</p>
+            <img
+              class="d-block w-100"
+              src="/images/prices-carousel/carousel6.webp"
+              alt="Third slide"
+            />
+            <div class="carousel-caption">
+              <button class="py-2 px-4">غرفة عائلية</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide d-none d-lg-block col-lg-4"
+        data-ride="carousel"
+        data-interval="2000"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p class="p-2 m-2">130 جنيه / اليوم</p>
+            <img
+              class="d-block w-100"
+              src="/images/prices-carousel/carousel7.webp"
+              alt="First slide"
+            />
+            <div class="carousel-caption">
+              <button class="py-2 px-4">غرفة فردية</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <p class="p-2 m-2">140 جنيه / اليوم</p>
+            <img
+              class="d-block w-100"
+              src="/images/prices-carousel/carousel8.webp"
+              alt="Second slide"
+            />
+            <div class="carousel-caption">
+              <button class="py-2 px-4">غرفة فردية</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <p class="p-2 m-2">120 جنيه / اليوم</p>
+            <img
+              class="d-block w-100"
+              src="/images/prices-carousel/carousel9.webp"
+              alt="Third slide"
+            />
+            <div class="carousel-caption">
+              <button class="py-2 px-4">غرفة فردية</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of prices carousel -->
+
+    <!-- footer -->
+    <div class="row footer text-center pt-3">
+      <div class="col-12">
+        <div class="row">
+          <div class="row col-12">
+            <div class="col-lg-2 text-right">
+              <h4 class="py-2">العنوان</h4>
+              <p>مصر</p>
+              <p>الإسكندرية</p>
+              <p>شاطئ 7</p>
+            </div>
+            <div class="col-lg-4 text-right">
+              <h4 class="py-2">الحجز</h4>
+              <p>هاتف: 698573235</p>
+              <p>فاكس: 51291475325</p>
+              <p>reservations@hotelresort.com</p>
+            </div>
+            <div class="col-12 col-lg-3 text-right">
+              <h4 class="py-2">متابعة</h4>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="اكتب ايميلك"
+              />
+              <div class="row">
+                <button class="py-2 px-5 my-3">اشترك</button>
+              </div>
+            </div>
+            <div class="row col-6 col-lg-3 pt-5">
+              <div class="col-6">
+                <img
+                  src="/images/experience/about_1.webp"
+                  alt="experience 1"
+                  class="w-100"
+                />
+              </div>
+              <div class="col-6">
+                <img
+                  src="/images/experience/LEED_Certified.5c586582b55011 (1).webp"
+                  alt="experience 2"
+                  class="w-100"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 pt-5">
+            <p class="copyright">محمد رجب @ 2019</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of footer -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
